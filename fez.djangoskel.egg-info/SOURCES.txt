@@ -1,0 +1,14 @@
+README.txt
+setup.cfg
+setup.py
+fez/__init__.py
+fez.djangoskel.egg-info/PKG-INFO
+fez.djangoskel.egg-info/SOURCES.txt
+fez.djangoskel.egg-info/dependency_links.txt
+fez.djangoskel.egg-info/entry_points.txt
+fez.djangoskel.egg-info/namespace_packages.txt
+fez.djangoskel.egg-info/not-zip-safe
+fez.djangoskel.egg-info/requires.txt
+fez.djangoskel.egg-info/top_level.txt
+fez/djangoskel/__init__.py
+fez/djangoskel/djangoapp.py

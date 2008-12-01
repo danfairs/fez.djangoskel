@@ -1,0 +1,25 @@
+Metadata-Version: 1.0
+Name: fez.djangoskel
+Version: 0.1dev
+Summary: Paster templates for creating Django applications as eggs
+Home-page: http://www.fezconsulting.com
+Author: Dan Fairs
+Author-email: dan@fezconsulting.com
+License: MIT
+Description: Introduction
+        ============
+        
+        
+        
+        Changelog
+        =========
+        
+        0.1 - Unreleased
+        ----------------
+        
+        * Initial release
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules

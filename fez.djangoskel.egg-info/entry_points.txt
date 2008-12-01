@@ -1,0 +1,4 @@
+
+      [paste.paster_create_template]
+      django_app=fez.djangoskel.djangoapp:DjangoAppTemplate
+      
