@@ -11,4 +11,4 @@ fez.djangoskel.egg-info/not-zip-safe
 fez.djangoskel.egg-info/requires.txt
 fez.djangoskel.egg-info/top_level.txt
 fez/djangoskel/__init__.py
-fez/djangoskel/djangoapp.py
+fez/djangoskel/pastertemplates.py

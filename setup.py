@@ -30,5 +30,6 @@ setup(name='fez.djangoskel',
       entry_points="""
       [paste.paster_create_template]
       django_app=fez.djangoskel.pastertemplates:DjangoAppTemplate
+      django_project=fez.djangoskel.pastertemplates:DjangoProjectTemplate
       """,
       )
