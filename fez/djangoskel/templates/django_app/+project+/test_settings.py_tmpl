@@ -1,0 +1,9 @@
+# Settings to be used when running unit tests
+# python manage.py test --settings=$project.settngs $project
+DATABASE_ENGINE = ''
+DATABASE_NAME = ''
+INSTALLED_APPS = (
+    ${repr($project)},
+)
+SITE_ID = 1
+ROOT_URLCONF = ''
