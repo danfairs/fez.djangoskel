@@ -13,7 +13,6 @@ class DjangoAppTemplate(Template):
         var('license_name', 'License name'),
         var('zip_safe', 'True/False: if the package can be distributed as a .zip file',
             default=False),
-        var('settings', 'Generate a settings file?', default=False)
     ]
     
     _template_dir = 'templates/django_app'
