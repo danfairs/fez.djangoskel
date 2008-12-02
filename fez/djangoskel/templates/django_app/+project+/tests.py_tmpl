@@ -5,7 +5,7 @@ class AppTestCase(TestCase):
     Populate this class with unit tests for your application
     """
     
-    urls = '($project).test_urls'
+    urls = '${project}.test_urls'
     
     def testApp():
         pass
