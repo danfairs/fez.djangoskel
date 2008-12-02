@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.1.1
+-----
+
+* Corrected setup.cfg release tagging
+
 0.1
 ---
 
