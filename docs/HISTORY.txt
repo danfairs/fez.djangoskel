@@ -4,5 +4,5 @@ Changelog
 0.1 - Unreleased
 ----------------
 
-* Initial release
+* Initial work on django_app and django_project templates
 
