@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.2.0
+-----
+
+* Added templates for namespaced projects and applications
+
 0.1.2
 -----
 
