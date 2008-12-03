@@ -10,7 +10,7 @@ Description: Introduction
         ============
         
         fez.djangoskel provides paster templates for creating Django
-        projects and applications as eggs. Two templates are currently
+        projects and applications as eggs. Four templates are currently
         provided.
         
         
@@ -23,10 +23,12 @@ Description: Introduction
         
         $ paster create --list-templates
         Available templates:
-        basic_package:   A basic setuptools-enabled package
-        django_app:      Template for a basic Django reusable application
-        django_project:  Template for a Django project
-        paste_deploy:    A web application deployed through paste.deploy
+        basic_package:             A basic setuptools-enabled package
+        django_app:                Template for a basic Django reusable application
+        django_namespace_app:      Template for a namespaced Django reusable application
+        django_namespace_project:  Template for a namespaced Django project
+        django_project:            Template for a Django project
+        paste_deploy:              A web application deployed through paste.deploy
         
         Create a Django project using the django_project template:
         
@@ -38,6 +40,34 @@ Description: Introduction
         Applications are created in a similar way:
         
         paster create -t django_app
+        
+        Projects created with these templates do not have namespace packages: that is,
+        you will find a directory created with the name of the package you specified
+        which contains all the usual egg stuff, and the module will be under that
+        directory.
+        
+        If you wish to create a namespaced package (similar, for example, to this
+        package: fez.djangoskel) then you should use the django_namespace_app and
+        django_namespace_project templates. Both work in the same way.
+        
+        When creating eggs based on django_namespace_app or django_namespace_project,
+        paster will ask you for three pieces of information:
+        
+        - Project name
+        - This should be the full dotted name of the package eg. foo.bar
+        - Namespace package
+        - This is the top-level namespace package, eg. foo
+        - Package name
+        - This is the name of the lower-level module, eg. bar
+        
+        This will give you a directory layout like this:
+        
+        ./foo.bar
+        /foo
+        /bar
+        
+        Your code will most likely be going under bar; this is where models.py, urls.py
+        etc. will be created.
         
         
         Difference from Django's own templates
@@ -61,6 +91,11 @@ Description: Introduction
         
         Changelog
         =========
+        
+        0.2.0
+        -----
+        
+        * Added templates for namespaced projects and applications
         
         0.1.2
         -----
