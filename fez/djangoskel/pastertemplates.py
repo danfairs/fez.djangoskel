@@ -16,6 +16,9 @@ class DjangoTemplate(Template):
             default=False),
     ]
 
+    use_cheetah = True
+    required_templates = []
+
     def check_vars(self, vars, command):
         if not command.options.no_interactive and \
            not hasattr(command, '_deleted_once'):
@@ -27,22 +30,40 @@ class DjangoTemplate(Template):
 class DjangoAppTemplate(DjangoTemplate):    
     _template_dir = 'templates/django_app'
     summary = 'Template for a basic Django reusable application'
-    use_cheetah = True
-    required_templates = []
+
+
+def append_secret_key(vars):
+    default_key = ''.join([choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
+    vars.append(
+        var('secret_key', 'Secret key', default=default_key)
+    )
 
 
 class DjangoProjectTemplate(DjangoTemplate):
     _template_dir = 'templates/django_project'
     summary = 'Template for a Django project'
-    use_cheetah = True
-    required_templates = []
     
     def __init__(self, name):
-        default_key = ''.join([choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
-        
-        self.vars.append(
-            var('secret_key', 'Secret key', default=default_key)
-        )
-        
+        append_secret_key(self.vars)
         super(DjangoProjectTemplate, self).__init__(name)
+
+class DjangoNamespaceTemplate(DjangoTemplate):
+
+    vars = [
+        var('namespace_package', 'Top-level namespace package'),
+        var('package', 'The name of the package contained within the namespace')
+    ] + DjangoTemplate.vars
     
+    
+class DjangoNamespaceAppTemplate(DjangoNamespaceTemplate):
+    _template_dir = 'templates/django_namespace_app'
+    summary = 'Template for a namespaced Django reusable application'
+    
+    
+class DjangoNamespaceProjectTemplate(DjangoNamespaceTemplate):
+    _template_dir = 'templates/django_namespace_project'
+    summary = 'Template for a namespaced Django project'
+
+    def __init__(self, name):
+        append_secret_key(self.vars)
+        super(DjangoNamespaceProjectTemplate, self).__init__(name)

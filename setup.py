@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.1.2'
+version = '0.2.0'
 
 setup(name='fez.djangoskel',
       version=version,
@@ -37,5 +37,7 @@ setup(name='fez.djangoskel',
       [paste.paster_create_template]
       django_app=fez.djangoskel.pastertemplates:DjangoAppTemplate
       django_project=fez.djangoskel.pastertemplates:DjangoProjectTemplate
+      django_namespace_app=fez.djangoskel.pastertemplates:DjangoNamespaceAppTemplate
+      django_namespace_project=fez.djangoskel.pastertemplates:DjangoNamespaceProjectTemplate
       """,
       )
