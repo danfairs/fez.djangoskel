@@ -19,7 +19,7 @@ setup(name=${repr($project)},
       url=${repr($url) or $empty},
       license=${repr($license_name) or $empty},
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=[],
+      namespace_packages=[${repr($namespace_package)}],
       include_package_data=True,
       zip_safe=${repr(bool($zip_safe)) or False},
       install_requires=[
