@@ -2,6 +2,6 @@ from django.conf.urls.defaults import *
 
 # URL patterns for $project
 
-urlpatterns = patterns'${project}.views',
+urlpatterns = patterns('${project}.views',
   # Add url patterns here
 )
