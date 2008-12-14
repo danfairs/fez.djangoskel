@@ -10,7 +10,7 @@ Usage
 =====
 
 Install fez.djangoskel using easy_install. This should also install
-paster as a dependency. You should then be able to see two new
+paster as a dependency. You should then be able to see four new
 templates available::
 
   $ paster create --list-templates
