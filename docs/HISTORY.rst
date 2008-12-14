@@ -1,6 +1,12 @@
 Changelog
 =========
 
+0.2.1
+-----
+
+* Added missing opening parenthesis to urls.py template for django_app
+* Renamed doc files to .rst, and updated MANIFEST accordingly
+
 0.2.0
 -----
 
