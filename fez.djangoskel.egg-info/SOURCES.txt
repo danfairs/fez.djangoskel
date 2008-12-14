@@ -1,8 +1,9 @@
 LICENSE.txt
 MANIFEST.in
-README.txt
+README.rst
 setup.cfg
 setup.py
+docs/HISTORY.rst
 fez/__init__.py
 fez.djangoskel.egg-info/PKG-INFO
 fez.djangoskel.egg-info/SOURCES.txt
