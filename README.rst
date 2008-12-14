@@ -12,15 +12,15 @@ Usage
 Install fez.djangoskel using easy_install. This should also install
 paster as a dependency. You should then be able to see two new
 templates available:
-
-$ paster create --list-templates
-Available templates:
-  basic_package:             A basic setuptools-enabled package
-  django_app:                Template for a basic Django reusable application
-  django_namespace_app:      Template for a namespaced Django reusable application
-  django_namespace_project:  Template for a namespaced Django project
-  django_project:            Template for a Django project
-  paste_deploy:              A web application deployed through paste.deploy
+::
+  $ paster create --list-templates
+  Available templates:
+    basic_package:             A basic setuptools-enabled package
+    django_app:                Template for a basic Django reusable application
+    django_namespace_app:      Template for a namespaced Django reusable application
+    django_namespace_project:  Template for a namespaced Django project
+    django_project:            Template for a Django project
+    paste_deploy:              A web application deployed through paste.deploy
   
 Create a Django project using the django_project template:
 
@@ -29,9 +29,9 @@ paster create -t django_project
 Answer the questions that paster asks, and it will create a full
 Django project with a template settings file and urls.py.
 
-Applications are created in a similar way:
+Applications are created in a similar way::
 
-paster create -t django_app
+  paster create -t django_app
 
 Projects created with these templates do not have namespace packages: that is,
 you will find a directory created with the name of the package you specified
@@ -52,11 +52,11 @@ paster will ask you for three pieces of information:
 - Package name
   - This is the name of the lower-level module, eg. bar
   
-This will give you a directory layout like this:
+This will give you a directory layout like this::
 
-./foo.bar
-  /foo
-      /bar
+  ./foo.bar
+    /foo
+        /bar
           
 Your code will most likely be going under bar; this is where models.py, urls.py
 etc. will be created.
