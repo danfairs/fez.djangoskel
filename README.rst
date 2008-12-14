@@ -11,8 +11,8 @@ Usage
 
 Install fez.djangoskel using easy_install. This should also install
 paster as a dependency. You should then be able to see two new
-templates available:
-::
+templates available::
+
   $ paster create --list-templates
   Available templates:
     basic_package:             A basic setuptools-enabled package
@@ -22,9 +22,9 @@ templates available:
     django_project:            Template for a Django project
     paste_deploy:              A web application deployed through paste.deploy
   
-Create a Django project using the django_project template:
+Create a Django project using the django_project template::
 
-paster create -t django_project
+  paster create -t django_project
 
 Answer the questions that paster asks, and it will create a full
 Django project with a template settings file and urls.py.
