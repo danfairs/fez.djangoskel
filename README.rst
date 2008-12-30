@@ -2,7 +2,7 @@ Introduction
 ============
 
 fez.djangoskel provides paster templates for creating Django
-projects and applications as eggs. Four templates are currently 
+projects and applications as eggs. Five templates are currently 
 provided.
 
 
@@ -10,17 +10,25 @@ Usage
 =====
 
 Install fez.djangoskel using easy_install. This should also install
-paster as a dependency. You should then be able to see four new
+paster as a dependency. You should then be able to see five new
 templates available::
 
   $ paster create --list-templates
   Available templates:
     basic_package:             A basic setuptools-enabled package
     django_app:                Template for a basic Django reusable application
+    django_buildout:           A plain Django buildout    
     django_namespace_app:      Template for a namespaced Django reusable application
     django_namespace_project:  Template for a namespaced Django project
     django_project:            Template for a Django project
     paste_deploy:              A web application deployed through paste.deploy
+
+You may create an initial Django buildout using the django_buildout template::
+
+  paster create -t django_buildout
+  
+This will create bootstrap.py, buildout.cfg and devel.cfg files. You should edit
+the buildout files to your needs.
   
 Create a Django project using the django_project template::
 
@@ -79,4 +87,4 @@ Why use these templates?
   you started writing tests: a tests module, test settings (which can
   be invoked using python manage.py test --settings=project.settings)
   and test URLConfs and settings that the test client can use.
-
+  
