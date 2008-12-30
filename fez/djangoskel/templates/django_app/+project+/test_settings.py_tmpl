@@ -1,5 +1,5 @@
 # Settings to be used when running unit tests
-# python manage.py test --settings=${project}.settings $project
+# python manage.py test --settings=${project}.test_settings $project
 
 DATABASE_ENGINE = ''           # 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.
 DATABASE_NAME = ''             # Or path to database file if using sqlite3.
