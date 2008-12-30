@@ -5,7 +5,7 @@ Changelog
 -----
 
 * Corrected small error in test_settings.py comment
-* Merged Fabio Corneti's django_buildout template (thanks Fabio!)
+* Merged Fabio Corneti's django_buildout template and egg-info tidying (thanks Fabio!)
 * Updated docs to note new template
 
 0.2.1
