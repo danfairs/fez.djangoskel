@@ -1,6 +1,11 @@
 Changelog
 =========
 
+unreleased
+----------
+
+* Corrected small error in test_settings.py comment
+
 0.2.1
 -----
 
