@@ -1,0 +1,9 @@
+[buildout]
+parts = django
+
+[django]
+recipe = djangorecipe
+version = ${django_version}
+project = ${django_project_name}
+wsgi=true
+settings=production
