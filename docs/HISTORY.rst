@@ -1,10 +1,12 @@
 Changelog
 =========
 
-unreleased
-----------
+0.3.0
+-----
 
 * Corrected small error in test_settings.py comment
+* Merged Fabio Corneti's django_buildout template (thanks Fabio!)
+* Updated docs to note new template
 
 0.2.1
 -----
