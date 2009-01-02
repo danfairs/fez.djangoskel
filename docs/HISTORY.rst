@@ -1,6 +1,11 @@
 Changelog
 =========
 
+0.3.1
+-----
+
+* Fixed broken import in generated tests.py in apps
+
 0.3.0
 -----
 

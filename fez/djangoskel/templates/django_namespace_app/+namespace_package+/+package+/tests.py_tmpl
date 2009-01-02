@@ -1,4 +1,4 @@
-from djangp.test import TestCase
+from django.test import TestCase
 
 class AppTestCase(TestCase):
     """
