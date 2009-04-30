@@ -31,7 +31,11 @@ class DjangoTemplate(Template):
 class DjangoAppTemplate(DjangoTemplate):    
     _template_dir = 'templates/django_app'
     summary = 'Template for a basic Django reusable application'
-
+    vars = [
+        var('django_version',
+            'Django version to fetch, the default is 1.0.2',
+            default='1.0.2'),
+    ] + DjangoTemplate.vars
 
 def append_secret_key(vars):
     default_key = ''.join([choice('abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)') for i in range(50)])
