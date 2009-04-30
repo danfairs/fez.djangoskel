@@ -7,5 +7,5 @@ class AppTestCase(TestCase):
     
     urls = '${project}.test_urls'
     
-    def testApp():
+    def testApp(self):
         pass
