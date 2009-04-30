@@ -25,6 +25,7 @@ setup(name=${repr($project)},
       zip_safe=${repr(bool($zip_safe)) or False},
       install_requires=[
           'setuptools',
+          'django',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
